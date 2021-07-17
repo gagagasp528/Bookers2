@@ -1,9 +1,9 @@
-<%= render 'books/aaa', book: @book,user:current_user %>
+<%= render 'books/aaa',user: current_user, book: @book %>
 
   <% @books.each do |book| %>
    <h1>Books</h1>
-    <%= book.title %>
-     <%= book.body %>
+    <p><%= book.title %></p>
+     <p><%= book.body %></p>
 <% end %>
 
 
