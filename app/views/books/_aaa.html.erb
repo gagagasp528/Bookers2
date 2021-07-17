@@ -1,0 +1,39 @@
+<h1>User info</h1>
+<table class="table">
+  <tbody>
+    <tr><%= attachment_image_tag post_image.user, :profile_image, :fill, 60, 60, fallback: "no_image.jpg" %></p>
+  <label></label></label>
+  </tr>
+  <tr>
+	  <th>name</th>
+	  <th></th>
+  </tr>
+  <tr>
+	  <th>introduction</th>
+	  <th></th>
+  </tr>
+</tbody></table>
+
+
+
+
+
+<h1>New book</h1>
+
+
+<% if book.errors.any? %>
+  <%= book.errors.count %> prohibited this book from being saved:
+    <ul>
+      <% book.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+  <% end %>
+<% end %>
+
+<%= form_with model:book, local:true do |f| %>
+
+  <h4>Title</h4>
+  <%= f.text_field :title %>
+  <h4>Opinion</h4>
+  <%= f.text_area :body %>
+  <%= f.submit"Create Book" %>
+  <% end %>
