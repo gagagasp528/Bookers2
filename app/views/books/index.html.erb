@@ -1,7 +1,8 @@
 <%= render 'books/aaa',user: current_user, book: @book %>
 
+
+<h1>Books</h1>
   <% @books.each do |book| %>
-   <h1>Books</h1>
     <p><%= book.title %></p>
      <p><%= book.body %></p>
 <% end %>

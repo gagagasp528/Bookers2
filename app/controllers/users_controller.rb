@@ -4,10 +4,12 @@ class UsersController < ApplicationController
 def index
     @users = User.all
     @user = User.new
-  end
+    @book = Book.new
+end
 
   def show
     @user = User.find(params[:id])
+    # @book = Book.new
   end
 
   def edit
@@ -22,15 +24,24 @@ def index
     else
       @Users = User.all
       render :index
-  end
-end
+    end
+ end
   def destroy
      user = User.find(params[:id])
-  if user.destroy
-     flash[:notice] = "Book was successfully destroyed."
+    if user.destroy
+     flash[:notice] = "Book was successfully destroy."
      redirect_to users_path
-   end
+    end
   end
+
+
+def update
+    @user = User.find(params[:id])
+    flash[:notice] = "You have updated user successfully."
+    @user.update(user_params)
+    redirect_to user_path(@user.id)
+end
+
 
 private
 
