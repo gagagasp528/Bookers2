@@ -1,1 +1,26 @@
 <%= render 'books/aaa',user: @user, book: Book.new %>
+
+
+<table class="table table-hover table-inverse">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Title</th>
+      <th>Opinion</th>
+      <th colspan="3"></th>
+
+<h2>Books</h2>
+  <% @users.each do |user| %>
+    <th><%= user.image %></th>
+     <th><%= book.title %></th>
+     <th><%= book.opinion %></th>
+<% end %>
+
+ </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+
+
+
