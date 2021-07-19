@@ -1,27 +1,29 @@
-      <%= render 'layouts/user',user: @user %>
-     <%= render 'layouts/book',book: @book %>
-
-
-<table class="table table-hover table-inverse">
+ <%= render 'layouts/user',user: @user %>
+ <%= render 'layouts/book',book: @book %>
+<div class="container">
+  <div class="row">
+   <div class="col-md-8">
   <thead>
-    <tr>
-      <th></th>
-      <th>Title</th>
-      <th>Opinion</th>
-      <th colspan="3"></th>
-
+    
+    
 <h2>Books</h2>
+   <table class="table table-hover table-inverse">
+      <thead>
+        <tr>
+          <th colspan="1"></th>
+          <th>Title</th>
+          <th>Opinion</th>
+        </tr>
+      <tbody>
   <% @books.each do |user| %>
-    <th><%= attachment_image_tag @user, :profile_image, :fill, 60, 60, format: "jpeg", fallback: "no_image.jpg", size: "60x60" %></th>
-     <th><%= user.title %></th>
+   <tr>
+     <th><%= attachment_image_tag @user, :profile_image, :fill, 60, 60, format: "jpeg", fallback: "no_image.jpg", size: "60x60" %></th>
+     <th><%= link_to "user.title", book_path %></th>
      <th><%= user.body %></th>
+   </tr>
 <% end %>
-
- </tr>
-  </thead>
-  <tbody>
-  </tbody>
+ </thead>
 </table>
-
-
-
+</div>
+</div>
+</div>

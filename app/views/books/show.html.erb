@@ -1,31 +1,31 @@
     <div class="container">
-    <div class="row">
-    <div class="col-md-4">
-      <%= render 'books/aaa', book:@book_new, user:@book.user %>
-    </div>
-  <div class="col-md-8 offset-md-1">
+      <div class="row">
+        <div class="col-md-8">
+        
+     <%= render 'layouts/user',user: @user %>
+     <%= render 'layouts/book',book: @book %>
+    
+
   	<h2>Book detail</h2>
-  <div>
-
-  	<table class="table">
+  	 <table class="table table-hover table-inverse">
+  	 <thead>
   <% @books.each do |book| %>
-    <%= book.title %>
-     <%= book.body %>
-     <% if @user.id == current_user.id %>
-     <%= link_to "edit", edit_book_path %>
-     <%= link_to "Destroy", book_path, method: :delete, "data-confirm" => "Are you sure?" %>
-   </table>
-
-
-
-
+    <tr>
+       <th><%= attachment_image_tag @user, :profile_image, :fill, 20, 20, format: "jpeg", fallback: "no_image.jpg", size: "60x60" %></th>
+       <th>t<%= book.title %></th>
+       <th><%= book.body %></th>
+       <% if @user.id == current_user.id %>
+        <th><%= link_to "edit", edit_book_path %><th>
+        <th><%= link_to "Destroy", book_path, method: :delete, "data-confirm" => "Are you sure?" %></th>
+     <tr>
 <% end %>
 <% end %>
 
-
-
-
-
+     </thead>
+     </table>
+     </div>
+       </div>
+         </div>
 
 
 

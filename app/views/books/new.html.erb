@@ -1,2 +1,45 @@
-<h1>Books#new</h1>
-<p>Find me in app/views/books/new.html.erb</p>
+<div class="container px-5 px-sm-0">
+  <div class="row">
+
+<main>
+
+ <%= render 'layouts/user',user: @user %>
+     <%= render 'layouts/book',book: @book %>
+
+
+  <div class="col-md-8 offset-md-1">
+    <h2>Users</h2>
+
+    <table class="table">
+     <thead>
+        <tr>
+          <th>image</th>
+          <th>name</th>
+          <th colspan="3"></th>
+        </tr>
+    </thead>
+    <tbody>
+      <% @users.each do |user| %>
+        <tr>
+        <th><%= attachment_image_tag(user,:profile_image, 50, 50, fallback:"no_image.jpg" ) %></th>
+        <th><%= user.name %></th>
+        <!--<th colspan="3"></th>-->
+        <td><%= link_to "show", user_path(current_user) %>
+     </tr>
+      <% end %>
+    </tbody>
+    </table>
+</div>
+</div>
+</div>
+
+</main>
+
+
+
+
+
+
+
+
+
