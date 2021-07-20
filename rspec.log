@@ -1,0 +1,141 @@
+
+An error occurred while loading ./spec/helpers/books_helper_spec.rb.[31m - Did you mean?
+                    rspec ./spec/helpers/homes_helper_spec.rb
+                    rspec ./spec/helpers/users_helper_spec.rb
+[0m
+[31mFailure/Error: require 'rails_helper'[0m
+[31m[0m
+[31mLoadError:[0m
+[31m  cannot load such file -- rails_helper[0m
+[36m# ./spec/helpers/books_helper_spec.rb:1:in `require'[0m
+[36m# ./spec/helpers/books_helper_spec.rb:1:in `<top (required)>'[0m
+
+An error occurred while loading ./spec/helpers/homes_helper_spec.rb.[31m - Did you mean?
+                    rspec ./spec/helpers/books_helper_spec.rb
+                    rspec ./spec/helpers/users_helper_spec.rb
+[0m
+[31mFailure/Error: require 'rails_helper'[0m
+[31m[0m
+[31mLoadError:[0m
+[31m  cannot load such file -- rails_helper[0m
+[36m# ./spec/helpers/homes_helper_spec.rb:1:in `require'[0m
+[36m# ./spec/helpers/homes_helper_spec.rb:1:in `<top (required)>'[0m
+
+An error occurred while loading ./spec/helpers/users_helper_spec.rb.[31m - Did you mean?
+                    rspec ./spec/helpers/homes_helper_spec.rb
+                    rspec ./spec/helpers/books_helper_spec.rb
+[0m
+[31mFailure/Error: require 'rails_helper'[0m
+[31m[0m
+[31mLoadError:[0m
+[31m  cannot load such file -- rails_helper[0m
+[36m# ./spec/helpers/users_helper_spec.rb:1:in `require'[0m
+[36m# ./spec/helpers/users_helper_spec.rb:1:in `<top (required)>'[0m
+
+An error occurred while loading ./spec/models/book_spec.rb.[31m - Did you mean?
+                    rspec ./spec/models/user_spec.rb
+[0m
+[31mFailure/Error: require 'rails_helper'[0m
+[31m[0m
+[31mLoadError:[0m
+[31m  cannot load such file -- rails_helper[0m
+[36m# ./spec/models/book_spec.rb:1:in `require'[0m
+[36m# ./spec/models/book_spec.rb:1:in `<top (required)>'[0m
+
+An error occurred while loading ./spec/models/user_spec.rb.[31m - Did you mean?
+                    rspec ./spec/models/book_spec.rb
+[0m
+[31mFailure/Error: require 'rails_helper'[0m
+[31m[0m
+[31mLoadError:[0m
+[31m  cannot load such file -- rails_helper[0m
+[36m# ./spec/models/user_spec.rb:1:in `require'[0m
+[36m# ./spec/models/user_spec.rb:1:in `<top (required)>'[0m
+
+An error occurred while loading ./spec/requests/books_spec.rb.[31m - Did you mean?
+                    rspec ./spec/requests/homes_spec.rb
+                    rspec ./spec/requests/users_spec.rb
+                    rspec ./spec/models/book_spec.rb
+[0m
+[31mFailure/Error: require 'rails_helper'[0m
+[31m[0m
+[31mLoadError:[0m
+[31m  cannot load such file -- rails_helper[0m
+[36m# ./spec/requests/books_spec.rb:1:in `require'[0m
+[36m# ./spec/requests/books_spec.rb:1:in `<top (required)>'[0m
+
+An error occurred while loading ./spec/requests/homes_spec.rb.[31m - Did you mean?
+                    rspec ./spec/requests/books_spec.rb
+                    rspec ./spec/requests/users_spec.rb
+[0m
+[31mFailure/Error: require 'rails_helper'[0m
+[31m[0m
+[31mLoadError:[0m
+[31m  cannot load such file -- rails_helper[0m
+[36m# ./spec/requests/homes_spec.rb:1:in `require'[0m
+[36m# ./spec/requests/homes_spec.rb:1:in `<top (required)>'[0m
+
+An error occurred while loading ./spec/requests/users_spec.rb.[31m - Did you mean?
+                    rspec ./spec/requests/homes_spec.rb
+                    rspec ./spec/requests/books_spec.rb
+                    rspec ./spec/models/user_spec.rb
+[0m
+[31mFailure/Error: require 'rails_helper'[0m
+[31m[0m
+[31mLoadError:[0m
+[31m  cannot load such file -- rails_helper[0m
+[36m# ./spec/requests/users_spec.rb:1:in `require'[0m
+[36m# ./spec/requests/users_spec.rb:1:in `<top (required)>'[0m
+
+An error occurred while loading ./spec/views/books/edit.html.erb_spec.rb.[31m - Did you mean?
+                    rspec ./spec/views/books/index.html.erb_spec.rb
+                    rspec ./spec/views/books/new.html.erb_spec.rb
+                    rspec ./spec/views/books/show.html.erb_spec.rb
+[0m
+[31mFailure/Error: require 'rails_helper'[0m
+[31m[0m
+[31mLoadError:[0m
+[31m  cannot load such file -- rails_helper[0m
+[36m# ./spec/views/books/edit.html.erb_spec.rb:1:in `require'[0m
+[36m# ./spec/views/books/edit.html.erb_spec.rb:1:in `<top (required)>'[0m
+
+An error occurred while loading ./spec/views/books/index.html.erb_spec.rb.[31m - Did you mean?
+                    rspec ./spec/views/books/new.html.erb_spec.rb
+                    rspec ./spec/views/books/edit.html.erb_spec.rb
+                    rspec ./spec/views/books/show.html.erb_spec.rb
+[0m
+[31mFailure/Error: require 'rails_helper'[0m
+[31m[0m
+[31mLoadError:[0m
+[31m  cannot load such file -- rails_helper[0m
+[36m# ./spec/views/books/index.html.erb_spec.rb:1:in `require'[0m
+[36m# ./spec/views/books/index.html.erb_spec.rb:1:in `<top (required)>'[0m
+
+An error occurred while loading ./spec/views/books/new.html.erb_spec.rb.[31m - Did you mean?
+                    rspec ./spec/views/books/index.html.erb_spec.rb
+                    rspec ./spec/views/books/edit.html.erb_spec.rb
+                    rspec ./spec/views/books/show.html.erb_spec.rb
+[0m
+[31mFailure/Error: require 'rails_helper'[0m
+[31m[0m
+[31mLoadError:[0m
+[31m  cannot load such file -- rails_helper[0m
+[36m# ./spec/views/books/new.html.erb_spec.rb:1:in `require'[0m
+[36m# ./spec/views/books/new.html.erb_spec.rb:1:in `<top (required)>'[0m
+
+An error occurred while loading ./spec/views/books/show.html.erb_spec.rb.[31m - Did you mean?
+                    rspec ./spec/views/books/new.html.erb_spec.rb
+                    rspec ./spec/views/books/edit.html.erb_spec.rb
+                    rspec ./spec/views/books/index.html.erb_spec.rb
+[0m
+[31mFailure/Error: require 'rails_helper'[0m
+[31m[0m
+[31mLoadError:[0m
+[31m  cannot load such file -- rails_helper[0m
+[36m# ./spec/views/books/show.html.erb_spec.rb:1:in `require'[0m
+[36m# ./spec/views/books/show.html.erb_spec.rb:1:in `<top (required)>'[0m
+No examples found.
+
+Finished in 0.00004 seconds (files took 0.2262 seconds to load)
+[31m0 examples, 0 failures, 12 errors occurred outside of examples[0m
+
