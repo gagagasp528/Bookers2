@@ -18,7 +18,9 @@
         <th><%= link_to "Destroy", book_path(@book), class:"btn btn-sm btn-danger", method: :delete, "data-confirm" => "Are you sure?" %></th>
        <% end %>    
      <tr>
-        
+        <tr>
+         <th><%= link_to @user.name, user_path(@user) %></th>    
+       </tr>
 
      </thead>
      </table>
