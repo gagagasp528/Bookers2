@@ -44,7 +44,7 @@ if @book.update(book_params)
    flash[:notice] = "You have updated user successfully."
     redirect_to book_path(@book.id)
    else
-   render :editz
+   render :edit
    end
 end
 
